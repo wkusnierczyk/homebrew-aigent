@@ -1,26 +1,26 @@
 class Aigent < Formula
   desc "AI agent skill toolchain — validate, lint, score, build, and test SKILL.md files"
   homepage "https://github.com/wkusnierczyk/aigent"
-  version "0.6.2"
+  version "0.6.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/wkusnierczyk/aigent/releases/download/v#{version}/aigent-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b85b19e698134fc21aaec6f82af3c269914f9dbca3418e8927a40528040ae0bf"
+      sha256 "b5d88c8897afdfc59d241a16ae04ebc07fca2d16e04e545c500b69a5c6b2af4a"
     else
       url "https://github.com/wkusnierczyk/aigent/releases/download/v#{version}/aigent-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c8dc9de12118f0f516484a35277d3f8df89fae1205bb5778d549b12975ec9c31"
+      sha256 "432629142ddcd27f535112d6768bb14018554cf65e0d812b8dbe12f4f89a409f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/wkusnierczyk/aigent/releases/download/v#{version}/aigent-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5cdbcffe041b89f6306d15319b81fd77e2e084f242935080889c245cfac0ac7f"
+      sha256 "c08f2d8f1360e3e88a65260a9a20047a41650df6946899f4820828409abfea02"
     else
       url "https://github.com/wkusnierczyk/aigent/releases/download/v#{version}/aigent-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "42aadc7084ad8d208e12b7396cbf6cfe24bc292473ba8a93e9aff810ce856c90"
+      sha256 "541865d36c751bb6e21a0bd0c421c23d8db00aa9eab914ab8d5b6391b3886fbf"
     end
   end
 
